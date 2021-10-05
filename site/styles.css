@@ -1,0 +1,566 @@
+@font-face {
+    font-family: 'reznik';
+    src: url('fonts/reznik/reznik-webfont.woff2') format('woff2'),
+         url('fonts/reznik/reznik-webfont.woff') format('woff'),
+         url('fonts/reznik/Reznik.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'liberation_sans';
+    src: url('fonts/liberationsans/liberationsans-regular-webfont.woff2') format('woff2'),
+         url('fonts/liberationsans/liberationsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'barlow';
+    src: url('fonts/barlow/barlow-regular-webfont.woff2') format('woff2'),
+         url('fonts/barlow/barlow-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'uninsta';
+    src: url('fonts/uninsta/uninsta-webfont.woff2') format('woff2'),
+         url('fonts/uninsta/uninsta-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Body blanco para fondo blanco */
+body{
+    background-color: #ffffff;
+}
+
+.group:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+  }
+  * html .group             { zoom: 1; } /* IE6 */
+  *:first-child+html .group { zoom: 1; } /* IE7 */
+
+.gray-body{
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+.content-space{
+    max-width: 1016px;
+    width: 80%;
+    margin: auto;
+}
+
+.lg-space{
+    height: 7px;
+}
+
+.sm-space{
+    height: 2px;
+}
+
+/*Estilos redes sociales*/
+.redes-sociales{
+    font-family: reznik;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 4px 3px 4px 2px;
+}
+
+.redes-sociales a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 0.96em;
+}
+
+.redes-sociales .social-link{
+    margin-right: .4em;
+}
+
+.redes-sociales .fa-facebook-f{
+    color: #3c4854;
+}
+
+.redes-sociales .fa-twitter{
+    color: #29a9e6;
+}
+
+.redes-sociales .fa-instagram{
+    color: #000000;
+}
+
+.redes-sociales .login{
+   color: #000000;
+   background-image: url(images/separacion.png);
+   background-repeat: no-repeat;
+   background-position-x: right;
+   background-position-y: center;
+   padding-right: 8px;
+   margin-left: .8em;
+}
+
+.redes-sociales .register{
+    color: #000000;
+    padding-left: 7px;
+}
+
+/*Estilos header*/
+.header-flower-shop{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 1px 5px 1px;
+}
+
+.header-flower-shop .phone-icon{
+    float: left;
+    margin-top: 2px;
+}
+
+.header-flower-shop .phone-number{
+    float: left;
+    margin-left: 7px;
+}
+
+.header-flower-shop .phone-number span{
+    display: block;
+    font-family: liberation_sans;
+    text-transform: capitalize;
+    color: #000000;
+    font-size: .96em;
+}
+
+.header-flower-shop .phone-number .tittle{
+    color: #666666;
+    margin-bottom: 4px;
+}
+
+.header-flower-shop h1{
+    font-family: barlow;
+    text-transform: capitalize;
+    font-size: 3.3em;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #000000;
+}
+
+.header-flower-shop input{
+    font-family: barlow;
+    border: none;
+    background-color: #fbfbfb;
+    text-transform: capitalize;
+    background-image: url(images/lupa.png);
+    background-repeat: no-repeat;
+    background-position-x: 6px;
+    background-position-y: center;
+    padding: 5px;
+    padding-left: 33px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+/*Estilos navbar*/
+.nav-flower-shop ul{
+    list-style-type: none;
+    font-family: reznik;
+    text-transform: capitalize;
+    padding: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 0px 3px 0px;
+}
+
+.nav-flower-shop ul li a{
+    color:#000000;
+     text-decoration: none;
+     font-size: 1em; 
+}
+
+.nav-flower-shop ul li .cart-link{
+    background-image: url(images/cart.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 34px;
+    padding-bottom: 3px;
+}
+
+/*Estilos compromisos box*/
+.compromises-flower-shop{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.compromises-flower-shop span{
+    font-family: barlow;
+    color: #000000;
+    font-size: 1em;
+}
+
+.compromises-flower-shop .secure-compromise{
+    background-image: url(images/lock.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 23px;
+    padding-top: 5px;
+}
+
+.compromises-flower-shop .deliver-compromise{
+    background-image: url(images/van.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 47px;
+    padding-top: 3px;
+}
+
+.compromises-flower-shop .satisfaction-compromise{
+    background-image: url(images/thumb_up.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 28px;
+    padding-top: 4px;
+}
+
+
+/*Estilos featured flower shop*/
+.featured-flower-shop{
+    font-family: uninsta;
+    background-image: url(images/shop-flowers.jpeg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.section-boxes{
+    width: 25%;
+}
+
+.section-boxes .box-section{
+    background-color: #ffffff;
+    padding: 20px 25px 20px 25px;
+    margin-bottom: .6em;
+}
+
+.section-boxes .box-section h4{
+    color: #666666;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.section-boxes .box-section h3{
+    color:#000000;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.section-boxes .box-section span{
+    display: block;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.section-boxes .box-section a{
+    display: block;
+    background-color: #000000;
+    width: 1em;
+    height: 1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.order-flowers{
+    width: 75%;
+}
+
+.order-flowers .shop-us-100{
+    margin-top: 19%;
+}
+
+.order-flowers .shop-us-100 img{
+    display: block;
+    margin: auto;
+}
+
+.order-flowers .shop-us-100 button{
+    display: block;
+    border: none;
+    background-color: #ffffff;
+    font-family: uninsta;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 20px 5px 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin: auto;
+    cursor: pointer;
+}
+/*Esilos products flower shop */
+.products-flower-shop{
+    font-family: uninsta;
+}
+
+.products-flower-shop h2{
+    font-size: 1.2em;
+    font-family: barlow;
+    font-weight: lighter;
+}
+
+.products-flower-shop .products-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.products-flower-shop .products-list .product-item .name{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.products-flower-shop .products-list .product-item img{
+    display: block;
+    margin: auto;
+    /*se ajustó el tamaño de las imagenes*/
+    max-width: 186px;
+    max-height: 175px;
+}
+
+.products-flower-shop .products-list .product-item .mix {
+    text-align: center;
+}
+
+.products-flower-shop .products-list .product-item .mix .price{
+    display: inline-block;
+}
+
+.products-flower-shop .products-list .product-item .mix  .order-btn{
+    display: inline-block;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+/*Estilos info interes*/
+.interest-info{
+    margin-top: 2em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 3em;
+}
+
+.interest-info div{
+    flex-basis: 25%;
+    padding: 10px 7px 10px 7px;
+}
+
+.interest-info div h2{
+    font-family: barlow;
+    color: #000000;
+    margin-top: 0px;
+    font-size: .9em;
+    margin-bottom: 1.3em;
+}
+
+.interest-info div a{
+    display: block;
+    font-family: uninsta;
+    text-decoration: none;
+    color: #333333;
+    font-size: .8em;
+    line-height: 1.6em;
+}
+
+.interest-info div p{
+    color: #333333;
+    font-family: uninsta;
+    font-size: .8em;
+    padding-left: 12px;
+    line-height: 1.6em;
+}
+
+.interest-info div input{
+    display: block;
+    background-color: #ffffff;
+    color: #999999;
+    border: none;
+    font-family: uninsta;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    margin: auto;
+    font-size: .8em;
+    padding: 10px;
+    width: 72%;
+    margin-bottom: 8px;
+    font-size: .8em;
+}
+
+.interest-info div button{
+    display: block;
+    color: #ffffff;
+    background-color: #6fb07f;
+    margin: auto;
+    border: none;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    font-family: barlow;
+    padding: 10px 65px 10px 65px;
+    font-size: .8em;
+}
+
+.interest-info .testimonials p{
+    background-image: url(images/comillas.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+
+/*Footer*/
+footer{
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 3px 0px 3px 0px;
+}
+
+footer span{
+   color: #999999;
+   font-family: barlow;
+   font-size: .8em;;
+}
+
+footer .fa-facebook-f{
+    color: #9da2a6;
+}
+
+footer .fa-twitter{
+    color: #96d4f0;
+}
+
+footer .fa-instagram{
+    color: #7f7f7f;
+}
+
+@media screen and (max-width: 880px){
+    .header-flower-shop{
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    .section-boxes {
+        width: 50%;
+    }
+
+    .order-flowers {
+        width: 50%;
+    }
+
+    .interest-info{
+        flex-flow: row wrap;
+    }
+
+    .interest-info div{
+        flex-basis: 47%;
+    }
+
+
+}
+
+@media screen and (max-width: 880px){
+    .redes-sociales {
+        justify-content: center;
+    }
+
+    .nav-flower-shop ul{
+        flex-flow: column wrap;
+    }
+
+    .compromises-flower-shop{
+        flex-flow: column wrap;
+    }
+
+    .featured-flower-shop{
+        background-image: none;
+        flex-flow: column nowrap;
+    }
+
+    .section-boxes {
+        width: 100%;
+    }
+
+    .order-flowers {
+        width: 100%;
+    }
+
+    .order-flowers .shop-us-100 img{
+        width: 80%;
+    }
+
+    .products-flower-shop .products-list{
+        justify-content: center;
+    }
+
+    .interest-info{
+        flex-flow: column wrap;
+    }
+
+    .interest-info div{
+        flex-basis: 90%;
+    }
+
+    footer{
+        flex-flow: column nowrap;
+    }
+
+}
